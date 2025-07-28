@@ -74,17 +74,17 @@ const checkVictory = () => {
             if(pos1Val === pos2Val && pos2Val=== pos3Val){
                 console.log("victory for" , pos1Val) ;
                 showWinner(pos1Val) ;
-                
+                return true ;
             }
             
         }
         
-    }
+    } return false ;
 }
 
 const resetGame = () => {
     turn0 = true ;
-    
+    count = 0 ;
     enableButton() ;
     msg.classList.add("hide") ;
     
